@@ -1,5 +1,4 @@
-import os
-import pickle
+import os, pickle, importlib
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -39,18 +38,30 @@ class FeatureEngineer:
 # LOAD PICKLED MODEL
 @st.cache_resource
 def load_model():
+    required = ["sklearn", "numpy", "pandas", "joblib"]
+    for mod in required:
+        try:
+            m = importlib.import_module(mod)
+            v = getattr(m, "__version__", "unknown")
+            st.sidebar.info(f"{mod} {v} OK")
+        except ModuleNotFoundError:
+            st.error(
+                f"❌ Missing dependency '{mod}'."
+            )
+            st.stop()
+
     model_path = os.path.join(os.path.dirname(__file__), "CA_housing_price_regressor.sav")
     try:
         with open(model_path, "rb") as f:
             model = pickle.load(f)
         return model
     except FileNotFoundError:
-        st.error("❌ Model file 'CA_housing_price_regressor.sav' not found in app directory.")
+        st.error("❌ Model file 'CA_housing_price_regressor.sav' tidak ditemukan di folder app.")
         st.stop()
     except Exception as e:
-        st.error(f"❌ Failed to load model: {e}")
+        st.error(f"❌ Failed to load model: {type(e).__name__}: {e}")
         st.stop()
-
+        
 model = load_model()
 
 # UI
