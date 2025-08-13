@@ -2,7 +2,6 @@
 
 Capstone Project – Purwadhika JCDS 3004-009 (Module 3: Machine Learning)
 
-
 Author: **Bonifasius Sinurat**
 
 ---
@@ -38,7 +37,7 @@ Beyond accuracy, the project translates predictions into **business actions**: R
 
 - **Source:** *[Pace &amp; Barry (1997), California Housing (1990 Census)](https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset)*
 - **Rows:** 14,448 districts
-- **Target:** `median_house_value`
+- **Target:** `Median House Values`
 - **Features:** 9 numerical + 1 categorical (`oceanProx`)
 - **Notes:**
   - Censoring at **$500,001** for high-end prices
@@ -97,10 +96,10 @@ Linear, Ridge, Lasso, KNN, Decision Tree, Random Forest, XGBoost, **CatBoost**
 - **Negotiation Anchor (around a $260,000 prediction)**
   - MAE-based range: **$232,467 – $287,533**
 - **ROI Check (example setup)**
-  Total investment: **$236,000** (purchase + renovation)
-  Selling fee: **6%**
-  ROI target: **≥ 10%**
-  → **No Deal Below:** **$276,170**
+  - Total investment: **$236,000**
+  - **Selling fee: 6%**
+  - **ROI target: **≥ 10%****
+  - → **No Deal Below $276,170** **(purchase + renovation)**
 
 ---
 
@@ -114,11 +113,6 @@ Linear, Ridge, Lasso, KNN, Decision Tree, Random Forest, XGBoost, **CatBoost**
 2. Run the notebook:
 
    Open `capstone_m3_machine_learning.ipynb` in Jupyter/VS Code and run all cells.
-3. Run the Streamlit app:
-
-   ```
-   streamlit run app/app.py
-   ```
 
 ## Limitations & Next Steps
 
@@ -132,9 +126,9 @@ Linear, Ridge, Lasso, KNN, Decision Tree, Random Forest, XGBoost, **CatBoost**
 
 ## Deployment
 
-This repo includes `runtime.txt` (e.g., `3.11`) for Streamlit Cloud.
+This repo includes `runtime.txt` (e.g.,  `python-3.11`) for Streamlit Cloud.
 
-**Live App:** *coming soon*
+**Live App:** *[California Housing Price Predictor](https://capstone-california-housing-price-predictor.streamlit.app/)*
 
 ---
 
