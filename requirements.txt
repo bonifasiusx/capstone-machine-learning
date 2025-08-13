@@ -5,3 +5,5 @@ scikit-learn==1.5.1
 scipy==1.11.4
 joblib==1.3.2
 feature-engine
+catboost
+xgboost
