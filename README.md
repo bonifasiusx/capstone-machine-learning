@@ -1,7 +1,8 @@
-
 # 🏠 California Housing Price Prediction
 
 Capstone Project – Purwadhika JCDS 3004-009 (Module 3: Machine Learning)
+
+
 Author: **Bonifasius Sinurat**
 
 ---
@@ -35,7 +36,7 @@ Beyond accuracy, the project translates predictions into **business actions**: R
 
 ## Dataset
 
-- **Source:** Pace & Barry (1997), California Housing (1990 Census)
+- **Source:** *[Pace &amp; Barry (1997), California Housing (1990 Census)](https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset)*
 - **Rows:** 14,448 districts
 - **Target:** `median_house_value`
 - **Features:** 9 numerical + 1 categorical (`oceanProx`)
@@ -49,7 +50,7 @@ Beyond accuracy, the project translates predictions into **business actions**: R
 
 ### Preprocessing & Feature Engineering
 
-- Missing values: **KNNImputer** (137 NaNs)
+- Missing values: **KNNImputer** (137 NaN)
 - Outliers: **Winsorizer (Gaussian, fold 2.5)**
 - Scaling: **RobustScaler**
 - Encoding: **Binary / Ordinal / One-Hot**
@@ -93,7 +94,6 @@ Linear, Ridge, Lasso, KNN, Decision Tree, Random Forest, XGBoost, **CatBoost**
 
 ## Business Insights
 
-
 - **Negotiation Anchor (around a $260,000 prediction)**
   - MAE-based range: **$232,467 – $287,533**
 - **ROI Check (example setup)**
@@ -119,7 +119,6 @@ Linear, Ridge, Lasso, KNN, Decision Tree, Random Forest, XGBoost, **CatBoost**
    ```
    streamlit run app/app.py
    ```
-
 
 ## Limitations & Next Steps
 
