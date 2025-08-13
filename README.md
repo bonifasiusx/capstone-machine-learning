@@ -65,16 +65,16 @@ Linear, Ridge, Lasso, KNN, Decision Tree, Random Forest, XGBoost, **CatBoost**
 
 **Best Model – CatBoost**
 
-- MAE: **$27,341**
-- MAPE: **14.90%** (meets ≤ 15% target)
-- RMSLE: **0.2111**
+- MAE: **$27,533**
+- MAPE: **14.97%** (meets ≤ 15% target)
+- RMSLE: **0.2113**
 
 **Top Drivers (Feature Importance)**
 
-1. Ocean Proximity (~23.6%)
-2. Median Income (~23.2%)
-3. Latitude (~15%)
-4. Longitude (~13.3%)
+1. Ocean Proximity (~25.1%)
+2. Median Income (~21.6%)
+3. Latitude (~14%)
+4. Longitude (~14%)
 
 ---
 
@@ -95,7 +95,7 @@ Linear, Ridge, Lasso, KNN, Decision Tree, Random Forest, XGBoost, **CatBoost**
 
 
 - **Negotiation Anchor (around a $260,000 prediction)**
-  - MAE-based range: **$232,659 – $287,341**
+  - MAE-based range: **$232,467 – $287,533**
 - **ROI Check (example setup)**
   Total investment: **$236,000** (purchase + renovation)
   Selling fee: **6%**
