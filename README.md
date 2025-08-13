@@ -18,8 +18,8 @@ Beyond accuracy, the project translates predictions into **business actions**: R
 
 ## Repository Structure
 
-- **California House/** – dataset (CSV)
-- **catboost_info/** – CatBoost training logs (optional)
+- **California House/** – dataset
+- **catboost_info/** – CatBoost training logs
 - **png/** – images used in docs/README
   - actual_vs_predicted.png
   - feature_importances.png
@@ -120,7 +120,7 @@ Linear, Ridge, Lasso, KNN, Decision Tree, Random Forest, XGBoost, **CatBoost**
 * Add geospatial signals (distance to coast/city center/POIs)
 * Expand high-end segment coverage
 * Consider **quantile regression** / **conformal prediction** for price intervals
-* Regular  **retraining & validation** ; use **SHAP** for explainability
+* Regular **retraining & validation**; use **SHAP** for explainability
 
 ---
 
